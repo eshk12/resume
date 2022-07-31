@@ -72,7 +72,7 @@ const App = () => {
                     </Row>
                     <Row>
                         <Col xl={{span: 4, offset: 3}}>
-                            <div className={"section-text"}>
+                            <div className="section-text pl-4">
                                 <div className="title">Itzik Barabie</div>
                                 <div className="sub-title">Backend Developer in Amdocs</div>
                                 <p className="content">
@@ -127,49 +127,63 @@ const App = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col as={Card} className="me-3 col-3-customized skill">
-                            <div className="icon bg-yellow">
-                                <IoLogoJavascript/>
-                            </div>
-                            <div className="title text-yellow">Front end</div>
-                            <p className="content">
-                                HTML, CSS, JS<br/>
-                                Ajax, JQuery, Bootstrap<br/>
-                                React.js, Swing<br/>
+                        <Col lg={{span:12}}>
+                            <Container fluid>
+                                <Row>
+                                    <Col xl={{span: 3}} className="mb-4 mb-md-0">
+                                        <div className="skill">
+                                            <div className="icon bg-yellow">
+                                                <IoLogoJavascript/>
+                                            </div>
+                                            <div className="title text-yellow">Front end</div>
+                                            <p className="content">
+                                                HTML, CSS, JS<br/>
+                                                Ajax, JQuery, Bootstrap<br/>
+                                                React.js, Swing<br/>
 
-                            </p>
-                        </Col>
-                        <Col as={Card} className="me-3 col-3-customized skill">
-                            <div className="icon bg-green">
-                                <SiSpring/>
-                            </div>
-                            <div className="title text-green">Backend</div>
-                            <p className="content">
-                                Java<br/>
-                                Node.js<br/>
-                                PHP<br/>
-                            </p>
-                        </Col>
-                        <Col as={Card} className="me-3 col-3-customized skill">
-                            <div className="icon bg-blue">
-                                <GrMysql/>
-                            </div>
-                            <div className="title text-blue">Database</div>
-                            <p className="content">
-                                Mysql, Oracle SQL<br/>
-                                MongoDB<br/> via Hibernate, Mongoose.
-                            </p>
-                        </Col>
-                        <Col as={Card} className="me-3 col-3-customized skill">
-                            <div className="icon bg-purple">
-                                <GiDesk/>
-                            </div>
-                            <div className="title text-purple">Work Space</div>
-                            <p className="content">
-                                InteliJ, WebStorm<br/>
-                                DataGrip, GitHub,<br/>
-                                Jenkins, Jira, Linux
-                            </p>
+                                            </p>
+                                        </div>
+                                    </Col>
+                                    <Col xl={{span: 3}} className="mb-4 mb-md-0">
+                                        <div className="skill">
+                                            <div className="icon bg-green">
+                                                <SiSpring/>
+                                            </div>
+                                            <div className="title text-green">Backend</div>
+                                            <p className="content">
+                                                Java<br/>
+                                                Node.js<br/>
+                                                PHP<br/>
+                                            </p>
+                                        </div>
+                                    </Col>
+                                    <Col xl={{span: 3}} className="mb-4 mb-md-0">
+                                        <div className="skill">
+                                            <div className="icon bg-blue">
+                                                <GrMysql/>
+                                            </div>
+                                            <div className="title text-blue">Database</div>
+                                            <p className="content">
+                                                Mysql, Oracle SQL<br/>
+                                                MongoDB<br/> via Hibernate, Mongoose.
+                                            </p>
+                                        </div>
+                                    </Col>
+                                    <Col xl={{span: 3}} className="mb-4 mb-md-0">
+                                        <div className="skill">
+                                            <div className="icon bg-purple">
+                                                <GiDesk/>
+                                            </div>
+                                            <div className="title text-purple">Work Space</div>
+                                            <p className="content">
+                                                InteliJ, WebStorm<br/>
+                                                DataGrip, GitHub,<br/>
+                                                Jenkins, Jira, Linux
+                                            </p>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </Container>
                         </Col>
                     </Row>
                 </div>
