@@ -2,11 +2,11 @@ import Carousel from "react-spring-3d-carousel";
 import React, { useState, useEffect } from "react";
 
 const CustomizedCarousel = (props)  => {
+
     const table = props.cards.map((element, index) => {
         return { ...element, onClick: () => setGoToSlide(index) };
     });
-
-    const [offsetRadius, setOffsetRadius] = useState(2);
+    const [offsetRadius, setOffsetRadius] = useState(1);
     const [showArrows, setShowArrows] = useState(true);
     const [goToSlide, setGoToSlide] = useState(null);
     const [cards] = useState(table);
@@ -18,7 +18,7 @@ const CustomizedCarousel = (props)  => {
 
     return (
         <div
-            style={{ width: props.width, height: props.height, margin: props.margin }}
+            style={{ height: '800px' }}
         >
             <Carousel
                 slides={cards}

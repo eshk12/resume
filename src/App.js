@@ -1,62 +1,27 @@
 import './App.css';
-import {v4 as uuidv4} from "uuid";
-import CarouselItem from "./Components/CarouselItem";
 import CustomizedCarousel from "./Components/CustomizedCarousel";
 import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from "react-bootstrap/Card";
-//import Timeline from "./Components/Timeline";
-import {IoLogoJavascript} from 'react-icons/io';
-import {SiSpring} from 'react-icons/si';
-import {GrMysql} from 'react-icons/gr';
-import {GiDesk} from 'react-icons/gi';
+
 import Timeline from "./Components/Timeline";
+import information from "./data/Information";
 
+import {GoMarkGithub} from 'react-icons/go';
 const App = () => {
-    let cards = [
-        {
-            key: uuidv4(),
-            content: <CarouselItem/>
-        },
-        {
-            key: uuidv4(),
-            content: <CarouselItem/>
-        },
-        {
-            key: uuidv4(),
-            content: <CarouselItem/>
-        },
-        {
-            key: uuidv4(),
-            content: <CarouselItem/>
-        },
-        {
-            key: uuidv4(),
-            content: <CarouselItem/>
-        },
-        {
-            key: uuidv4(),
-            content: <CarouselItem/>
-        },
-        {
-            key: uuidv4(),
-            content: <CarouselItem/>
-        }
-    ];
-
     return (
         <div className="App">
+            <div className="ms-3 position-absolute top-0 start-0 github"><a href="https://github.com/eshk12" target="_blank" rel="noopener noreferrer" title="My GitHub"><GoMarkGithub /></a></div>
             <Container fluid>
                 <Row>
                     <Col>
                         <div className={"mt-40"}>
                             <div className={"title"}>
-                                Itzik Barabie
+                                {information.fullName}
                             </div>
                             <div className={"sub-title mt-0"}>
-                                software developer
+                                {information.role}
                             </div>
                         </div>
                     </Col>
@@ -72,28 +37,14 @@ const App = () => {
                     </Row>
                     <Row>
                         <Col xl={{span: 4, offset: 3}}>
-                            <div className="section-text pl-4">
-                                <div className="title">Itzik Barabie</div>
-                                <div className="sub-title">Backend Developer in Amdocs</div>
-                                <p className="content">
-                                    What is Lorem Ipsum?
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    <br/><br/>
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. <br/>
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting,
-                                    remaining essentially unchanged. <br/><br/>It was popularised in the 1960s with the
-                                    release of
-                                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                </p>
+                            <div className="section-text ps-4 pe-4">
+                                <div className="title">{information.fullName}</div>
+                                <div className="sub-title">{information.currentRole}</div>
+                                <p className="content">{information.aboutMe}</p>
                             </div>
                         </Col>
-                        <Col xl={{span: 1, offset: 1}}>
-                            <img className="profile-img"
-                                 src="https://media-exp1.licdn.com/dms/image/C4E03AQFYyF4MRWiGHw/profile-displayphoto-shrink_800_800/0/1619434456421?e=1664409600&v=beta&t=b2ANMUynOBdvaXecUzpZuR3hGjBzuUxB4yvqcE0Yjs0"/>
+                        <Col xl={{span: 1, offset: 1}} className="mt-5 mt-md-0" >
+                            <img className="profile-img" alt="profile" src={information.profilePic} />
                         </Col>
                     </Row>
                 </div>
@@ -106,13 +57,11 @@ const App = () => {
                         </Col>
                     </Row>
                     <Row className="carousel-row">
-                        <Col xl={{span: 10, offset: 1}}>
+                        <Col xl={{span: 10, offset: 1}} md={{span: 8, offset: 2}}>
                             <CustomizedCarousel
-                                cards={cards}
-                                height="800px"
-                                width="100%"
+                                cards={information.carouselItems(information.carouselItemsContent)}
                                 margin="0 auto"
-                                offset={2}
+                                offset={1}
                                 showArrows={false}
                             />
                         </Col>
@@ -130,58 +79,25 @@ const App = () => {
                         <Col lg={{span:12}}>
                             <Container fluid>
                                 <Row>
-                                    <Col xl={{span: 3}} className="mb-4 mb-md-0">
-                                        <div className="skill">
-                                            <div className="icon bg-yellow">
-                                                <IoLogoJavascript/>
-                                            </div>
-                                            <div className="title text-yellow">Front end</div>
-                                            <p className="content">
-                                                HTML, CSS, JS<br/>
-                                                Ajax, JQuery, Bootstrap<br/>
-                                                React.js, Swing<br/>
-
-                                            </p>
-                                        </div>
-                                    </Col>
-                                    <Col xl={{span: 3}} className="mb-4 mb-md-0">
-                                        <div className="skill">
-                                            <div className="icon bg-green">
-                                                <SiSpring/>
-                                            </div>
-                                            <div className="title text-green">Backend</div>
-                                            <p className="content">
-                                                Java<br/>
-                                                Node.js<br/>
-                                                PHP<br/>
-                                            </p>
-                                        </div>
-                                    </Col>
-                                    <Col xl={{span: 3}} className="mb-4 mb-md-0">
-                                        <div className="skill">
-                                            <div className="icon bg-blue">
-                                                <GrMysql/>
-                                            </div>
-                                            <div className="title text-blue">Database</div>
-                                            <p className="content">
-                                                Mysql, Oracle SQL<br/>
-                                                MongoDB<br/> via Hibernate, Mongoose.
-                                            </p>
-                                        </div>
-                                    </Col>
-                                    <Col xl={{span: 3}} className="mb-4 mb-md-0">
-                                        <div className="skill">
-                                            <div className="icon bg-purple">
-                                                <GiDesk/>
-                                            </div>
-                                            <div className="title text-purple">Work Space</div>
-                                            <p className="content">
-                                                InteliJ, WebStorm<br/>
-                                                DataGrip, GitHub,<br/>
-                                                Jenkins, Jira, Linux
-                                            </p>
-                                        </div>
-                                    </Col>
+                                    {
+                                        information.skills.map((skill, key) => {
+                                            return (
+                                                <Col
+                                                    key={key}
+                                                    xl={{span: 3}}
+                                                    className="mb-4 mb-md-0"
+                                                >
+                                                    <div className="skill">
+                                                        <div className={"icon "+ skill.bgColor}>
+                                                            {skill.icon}
+                                                        </div>
+                                                        <div className={"title "+skill.textColor}>{skill.title}</div>
+                                                        <p className="content">{skill.content}</p>
+                                                    </div>
+                                                </Col>
+                                            );
+                                        })
+                                    }
                                 </Row>
                             </Container>
                         </Col>
@@ -192,16 +108,15 @@ const App = () => {
                 <div className="timeline-container mt-90">
                     <Row>
                         <Col>
-                            <Timeline/>
+                            <Timeline
+                                timelines = {information.timelines}
+                            />
                         </Col>
                     </Row>
                 </div>
             </Container>
         </div>
-    )
-        ;
+    );
 }
 
 export default App;
-{/**/
-}
