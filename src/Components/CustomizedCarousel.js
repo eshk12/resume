@@ -15,7 +15,6 @@ const CustomizedCarousel = (props)  => {
         setOffsetRadius(props.offset);
         setShowArrows(props.showArrows);
     }, [props]);
-
     return (
         <div
             style={{ height: '800px' }}

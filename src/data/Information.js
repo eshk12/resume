@@ -10,6 +10,7 @@ import {v4 as uuidv4} from "uuid";
 import CarouselItem from "../Components/CarouselItem";
 
 const information = {
+    githubLink: 'https://github.com/eshk12',
     fullName: 'Itzik Barabie',
     role: 'software developer',
     currentRole: 'Backend Developer in Amdocs',
@@ -109,7 +110,7 @@ const information = {
             },
 
         ],
-    carouselItems: carouselItemsContent => carouselItemsContent.map((carouselItem) =>  ({key: uuidv4(), content: <CarouselItem carouselItem = {carouselItem} />}) ),
+    carouselItems: carouselItemsContent => carouselItemsContent.map((carouselItem, key) =>  ({key: uuidv4(), content: <CarouselItem key={key} carouselItem = {carouselItem} />}) ),
 
 
     carouselItemsContent: [
