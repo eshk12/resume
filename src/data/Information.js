@@ -13,6 +13,8 @@ import painter from '../assets/images/painter-sliced.png';
 import tropiPri from '../assets/images/tropiPri-sliced.jpg';
 import nadlanil from '../assets/images/nadlanil.png';
 import orBayaar from '../assets/images/orBayaar.png';
+import ametzDog from '../assets/images/ametzDog.png';
+import bouncePage from '../assets/images/bouncePage.png';
 
 
 const information = {
@@ -121,6 +123,31 @@ const information = {
 
     carouselItemsContent: [
         {
+            image: bouncePage,
+            projectName: 'Yad2 Automatic bouncer with GUI',
+            builtWith: ['Java', 'Swing', 'Json'],
+            links: [{
+                linkName: 'GitHub',
+                url: 'https://github.com/eshk12/Yad2AutomationWithGUI',
+            }],
+            creationDate: 'Created on: 2022',
+            content:
+                <>
+                    This project was built because I wanted to advertised something on the website Yad2, So I have found my self entering every 4 hours to bounce my ads to get them to the latest feeds.<br />
+                    So this application know to perform login to Yad2 website and populate the active ads and perform bounce every 4 hours.
+                </>
+        },{
+            image: ametzDog,
+            projectName: 'Ametz Kelev association',
+            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4','mySQL'],
+            links: [],
+            creationDate: 'Created on: 2017',
+            content:
+                <>
+                    This project was developed for free as contribution to the "Ametz Kelev" association.<br />
+                    I have design and developed this system to help city veterinarians and municipal corrals to advertise there kidnapped animals.<br />
+                </>
+        },{
             image: nadlanil,
             projectName: 'Real Estate site',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4','mySQL'],
@@ -146,7 +173,7 @@ const information = {
                 url: 'https://itzikb.co.il/orbayaar/ui',
                 accessDetails: "email : password"
             }],
-            creationDate: 'Created on: 2018',
+            creationDate: 'Created on: 2017',
             content:
                 <>
                     Design and develop with customized CMS, which allow the user to handle minor changes in the website.

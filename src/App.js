@@ -9,6 +9,9 @@ import Timeline from "./Components/Timeline";
 import information from "./data/Information";
 
 import {GoMarkGithub} from 'react-icons/go';
+import {HiOutlineMailOpen} from 'react-icons/hi';
+import {SiWhatsapp} from 'react-icons/si';
+import {MdAlternateEmail, MdOutlinePhoneIphone} from 'react-icons/md';
 
 const App = () => {
     return (
@@ -120,6 +123,31 @@ const App = () => {
                             <Timeline
                                 timelines={information.timelines}
                             />
+                        </Col>
+                    </Row>
+                </div>
+            </Container>
+            <Container>
+                <div className="contact mt-40">
+                    <Row>
+                        <Col md={12}>
+                            <div className="primary-icon"><HiOutlineMailOpen/></div>
+                            Feel free to contact at any time
+                        </Col>
+                    </Row>
+                    <br /><br />
+                    <Row>
+                        <Col md={4}>
+                            <div className="icon"><MdAlternateEmail/></div>
+                            <div className="reachOut">Itshakbar@gmail.com</div>
+                        </Col>
+                        <Col md={4}>
+                            <div className="icon"><MdOutlinePhoneIphone/></div>
+                            <div className="reachOut">+972.52.3937296</div>
+                        </Col>
+                        <Col md={4}>
+                            <div className="icon"><SiWhatsapp/></div>
+                            <div className="reachOut">whatsapp</div>
                         </Col>
                     </Row>
                 </div>
