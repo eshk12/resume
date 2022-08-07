@@ -15,6 +15,7 @@ import nadlanil from '../assets/images/nadlanil.png';
 import orBayaar from '../assets/images/orBayaar.png';
 import ametzDog from '../assets/images/ametzDog.png';
 import bouncePage from '../assets/images/bouncePage.png';
+import orental from '../assets/images/orental.png';
 
 
 const information = {
@@ -193,20 +194,6 @@ const information = {
                     Along with this site I have main an "Adword" campaign for advertising.
                 </>
         },{
-            image: tropiPri,
-            projectName: 'Store for the company Tropi-pri',
-            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'mySQL'],
-            links: [{
-                linkName: 'Visit the site',
-                url: 'https://tropi-pri.co.il/',
-            }],
-            creationDate: 'Created on: 2012',
-            content:
-                <>
-                    Design and develop an maintain an internet store that's hold many variation of fruits trays<br />
-                    This site was build with independent system that able the customers to purchase the good within the side.
-                </>
-        },{
             image: yhr,
             projectName: 'Yeshivat Hochamat Rahamim',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 3', 'mySQL'],
@@ -224,7 +211,35 @@ const information = {
                 Design and develop an website which shows the Yeshiva daily activitys.<br />
                 This site was built with inner store, gallery, videos and Q/A from the Rabai.
             </>
-        }
+        },{
+            image: tropiPri,
+            projectName: 'Store for the company Tropi-pri',
+            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'mySQL'],
+            links: [{
+                linkName: 'Visit the site',
+                url: 'https://tropi-pri.co.il/',
+            }],
+            creationDate: 'Created on: 2012',
+            content:
+                <>
+                    Design and develop an maintain an internet store that's hold many variation of fruits trays<br />
+                    This site was build with independent system that able the customers to purchase the good within the side.
+                </>
+        },{
+            image: orental,
+            projectName: 'Oren-Tal Electricity work LTD.',
+            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'mySQL'],
+            links: [{
+                linkName: 'Visit the site',
+                url: 'https://itzikb.co.il/orental/',
+            }],
+            creationDate: 'Created on: 2011',
+            content:
+                <>
+                    Design and develop an maintain an website which act as portfolio for the customer<br />
+                    This site was build along with CMS which allow the user to handle minor changes in the website.
+                </>
+        },
     ]
 
 }
