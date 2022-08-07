@@ -141,7 +141,6 @@
 }
 
 .carouselItem {
-    min-width: 1000px !important;
     height: 80%;
     border-radius: 20px !important;
 }
