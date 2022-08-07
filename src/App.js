@@ -70,7 +70,7 @@ const App = () => {
                             <CustomizedCarousel
                                 cards={information.carouselItems(information.carouselItemsContent)}
                                 margin="0 auto"
-                                offset={2}
+                                offset={1}
                                 showArrows={false}
                             />
                         </Col>

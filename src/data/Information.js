@@ -8,6 +8,12 @@ import {MdOutlineDeveloperMode} from 'react-icons/md';
 import {FaUniversity} from 'react-icons/fa';
 import {v4 as uuidv4} from "uuid";
 import CarouselItem from "../Components/CarouselItem";
+import yhr from '../assets/images/yhr-sliced.png';
+import painter from '../assets/images/painter-sliced.png';
+import tropiPri from '../assets/images/tropiPri-sliced.jpg';
+import nadlanil from '../assets/images/nadlanil.png';
+import orBayaar from '../assets/images/orBayaar.png';
+
 
 const information = {
     githubLink: 'https://github.com/eshk12',
@@ -115,25 +121,83 @@ const information = {
 
     carouselItemsContent: [
         {
-            image: 'https://images.unsplash.com/photo-1468774871041-fc64dd5522f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80',
-            projectName: 'Project 1',
-            builtWith: ['React', 'Java', 'Spring boot', 'Hibernate', 'mySQL'],
-            creationDate: '23/07/2020',
-            content: <>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only</>
+            image: nadlanil,
+            projectName: 'Real Estate site',
+            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4','mySQL'],
+            links: [{
+                linkName: 'Mock up',
+                url: 'https://itzikb.co.il/nadlanil/',
+            }],
+            creationDate: 'Created on: 2018',
+            content:
+                <>
+                    Design and develop an full system which manage and advertise mediator assets<br />
+                    I have build an engine which know to populate the best results for the customer according to it's inputs.
+                </>
         },{
-            image: 'https://images.unsplash.com/photo-1468774871041-fc64dd5522f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80',
-            projectName: 'Project 2',
-            builtWith: ['React', 'Java', 'Spring boot', 'Hibernate', 'mySQL'],
-            creationDate: '23/07/2020',
-            content: <>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only</>
-        },
-        {
-            image: 'https://images.unsplash.com/photo-1468774871041-fc64dd5522f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80',
-            projectName: 'Project 3',
-            builtWith: ['React', 'Java', 'Spring boot', 'Hibernate', 'mySQL'],
-            creationDate: '23/07/2020',
-            content: <>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only</>
-        },
+            image: orBayaar,
+            projectName: 'Or Bayaar - Events complex in Yad Mordechai Forest',
+            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4','mySQL'],
+            links: [{
+                linkName: 'Visit the site',
+                url: 'https://itzikb.co.il/orbayaar/',
+            },{
+                linkName: 'Dashboard',
+                url: 'https://itzikb.co.il/orbayaar/ui',
+                accessDetails: "email : password"
+            }],
+            creationDate: 'Created on: 2018',
+            content:
+                <>
+                    Design and develop with customized CMS, which allow the user to handle minor changes in the website.
+                </>
+        },{
+            image: painter,
+            projectName: 'Land page for professional painter in Ashkelon',
+            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 3'],
+            links: [{
+                linkName: 'Visit the site',
+                url: 'https://itzikb.co.il/painter/',
+            }],
+            creationDate: 'Created on: 2016',
+            content:
+                <>
+                    Design and develop an landpage which demonstrate the painter abilities,<br />
+                    Along with this site I have main an "Adword" campaign for advertising.
+                </>
+        },{
+            image: tropiPri,
+            projectName: 'Store for the company Tropi-pri',
+            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'mySQL'],
+            links: [{
+                linkName: 'Visit the site',
+                url: 'https://tropi-pri.co.il/',
+            }],
+            creationDate: 'Created on: 2012',
+            content:
+                <>
+                    Design and develop an maintain an internet store that's hold many variation of fruits trays<br />
+                    This site was build with independent system that able the customers to purchase the good within the side.
+                </>
+        },{
+            image: yhr,
+            projectName: 'Yeshivat Hochamat Rahamim',
+            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 3', 'mySQL'],
+            links: [{
+                linkName: 'Visit the site',
+                url: 'https://itzikb.co.il/yhr/',
+            },{
+                linkName: 'Dashboard',
+                url: 'https://itzikb.co.il/yhr/ui',
+                accessDetails: "email : password"
+            }],
+            creationDate: 'Created on: 2016',
+            content:
+            <>
+                Design and develop an website which shows the Yeshiva daily activitys.<br />
+                This site was built with inner store, gallery, videos and Q/A from the Rabai.
+            </>
+        }
     ]
 
 }

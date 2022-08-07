@@ -140,6 +140,7 @@
 }
 
 .carouselItem {
+    min-width: 1000px !important;
     height: 80%;
     border-radius: 20px !important;
 }
@@ -172,6 +173,16 @@
 .carouselItem-content div.builtWith .badge {
     font-weight: 200;
 }
+.carouselItem-content div.links a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.carouselItem-content span.accessDetails{
+    color: slategray;
+    font-size:14px;
+}
+
 
 .carouselItem-content div.creationDate {
     font-size: 14px;
