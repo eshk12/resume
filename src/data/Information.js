@@ -123,14 +123,14 @@ const information = {
         },{
             image: 'https://images.unsplash.com/photo-1468774871041-fc64dd5522f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80',
             projectName: 'Project 2',
-            builtWith: [],
+            builtWith: ['React', 'Java', 'Spring boot', 'Hibernate', 'mySQL'],
             creationDate: '23/07/2020',
             content: <>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only</>
         },
         {
             image: 'https://images.unsplash.com/photo-1468774871041-fc64dd5522f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80',
             projectName: 'Project 3',
-            builtWith: [],
+            builtWith: ['React', 'Java', 'Spring boot', 'Hibernate', 'mySQL'],
             creationDate: '23/07/2020',
             content: <>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only</>
         },

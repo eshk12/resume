@@ -28,6 +28,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
+    "buildLow": "nuxt buildnpm",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
