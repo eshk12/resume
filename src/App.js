@@ -131,7 +131,11 @@ const App = () => {
             </div>
             <div className={scrollPosition < 300 ? 'element-show' : 'element-hidden'}>
                 <div
-                    className="position-absolute bottom-0 start-50 translate-middle arrow-down">
+                    className="position-absolute bottom-0 start-50 translate-middle arrow-down"
+                    onClick={() => {
+                        scrollTo(aboutMeDetails.offsetTop)
+                    }}
+                >
                     <BsArrowDownCircle/>
                 </div>
             </div>
@@ -242,25 +246,46 @@ const App = () => {
                     <Row>
                         <Col md={12}>
                             <div className="primary-icon"><HiOutlineMailOpen/></div>
-                            Feel free to contact at any time
+                            Feel free to contact me at any time
                         </Col>
                     </Row>
                     <br/><br/>
                     <Row>
                         <Col md={4}>
-                            <div className="icon"><MdAlternateEmail/></div>
-                            <div className="reachOut"><a href="mailto:Itshakbar@gmail.com" target="_blank"
-                                                         rel="noopener noreferrer">Itshakbar@gmail.com</a></div>
+                            <div className="icon">
+                                <a href="mailto:Itshakbar@gmail.com" target="_blank" rel="noopener noreferrer">
+                                    <MdAlternateEmail/>
+                                </a>
+                            </div>
+                            <div className="reachOut">
+                                <a href="mailto:Itshakbar@gmail.com" target="_blank" rel="noopener noreferrer">
+                                    Itshakbar@gmail.com
+                                </a>
+                            </div>
                         </Col>
                         <Col md={4}>
-                            <div className="icon"><MdOutlinePhoneIphone/></div>
-                            <div className="reachOut"><a href="tel:+972523937296" target="_blank"
-                                                         rel="noopener noreferrer">+972.52.3937296</a></div>
+                            <div className="icon">
+                                <a href="tel:+972523937296" target="_blank" rel="noopener noreferrer">
+                                  <MdOutlinePhoneIphone/>
+                                </a>
+                            </div>
+                            <div className="reachOut">
+                                <a href="tel:+972523937296" target="_blank" rel="noopener noreferrer">
+                                    +972.52.3937296
+                                </a>
+                            </div>
                         </Col>
                         <Col md={4}>
-                            <div className="icon"><SiWhatsapp/></div>
-                            <div className="reachOut"><a href="https://api.whatsapp.com/send?phone=972523937296"
-                                                         target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
+                            <div className="icon">
+                                <a href="https://api.whatsapp.com/send?phone=972523937296" target="_blank" rel="noopener noreferrer">
+                                    <SiWhatsapp/>
+                                </a>
+                            </div>
+                            <div className="reachOut">
+                                <a href="https://api.whatsapp.com/send?phone=972523937296" target="_blank" rel="noopener noreferrer">
+                                    WhatsApp
+                                </a>
+                            </div>
                         </Col>
                     </Row>
                 </div>

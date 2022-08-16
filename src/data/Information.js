@@ -26,10 +26,16 @@ const information = {
     currentRole: 'Backend Developer in Amdocs',
     aboutMe:
     <>
-        I am a passionate Full stack developer, Experienced with building desktop, Web, and mobile applications from scratch.
-        <br/><br/>
-        I have experience working with Java, JS, Spring boot, React, React-Redux, Node.js, and more. <br/>
-        You can see some of my work and contribution at <a href="https://github.com/eshk12/" rel="noopener noreferrer" target="_blank">GitHub</a>.
+        I am an experienced Full stack developer, with a demonstrated history of working in the internet industry.<br />
+        Experienced with building desktop, Web, and mobile applications from scratch.
+        <br /><br />
+        Skilled in Java, JavaScript, Spring boot, React frameworks, Node.js, SQL, noSQL,  Linux System Administration, and Application Programming Interfaces.
+        <br />
+        Strong engineering knowledge with a love to develop full stack applications from scratch.
+        <br /><br />
+        B.Sc. degree in Computer Sciences graduate with professional experience.
+        <br /><br />
+        You can see some of my work and contribution on <a href="https://github.com/eshk12/" rel="noopener noreferrer" target="_blank">GitHub</a>.
     </>,
     profilePic: "https://media-exp1.licdn.com/dms/image/C4E03AQFYyF4MRWiGHw/profile-displayphoto-shrink_800_800/0/1619434456421?e=1664409600&v=beta&t=b2ANMUynOBdvaXecUzpZuR3hGjBzuUxB4yvqcE0Yjs0",
     skills:
@@ -46,7 +52,7 @@ const information = {
                 title: 'Backend',
                 bgColor: 'bg-green',
                 textColor: 'text-green',
-                content: <>Java - Spring boot<br/>Node.js - Express<br/>PHP<br/></>
+                content: <>Java - Spring boot<br/>Node.js - Express.js<br/>PHP<br/></>
             },
             {
                 icon: <GrMysql/>,
@@ -173,6 +179,21 @@ const information = {
                     animals for adoption.<br />
                 </>
         },{
+            image: tropiPri,
+            projectName: 'Tropi-Pri Online Store',
+            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'mySQL'],
+            links: [{
+                linkName: 'Visit the site',
+                url: 'https://tropi-pri.co.il/',
+            }],
+            creationDate: 'Created on: 2012',
+            content:
+                <>
+                    Designed and developed an online store for fruits trays company <br />
+                    The site includes a wide product catalog, content management, and online payment methods.
+                    This site was built with an independent system that able the customers to purchase the goods within the site.
+                </>
+        },{
             image: nadlanil,
             projectName: 'Real Estate site',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4','mySQL'],
@@ -235,21 +256,6 @@ const information = {
                 Designed and developed a website that shows Yeshiva's daily activities.<br />
                 The site includes content management, An online store, A gallery, And videos.
             </>
-        },{
-            image: tropiPri,
-            projectName: 'Tropi-Pri Online Store',
-            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'mySQL'],
-            links: [{
-                linkName: 'Visit the site',
-                url: 'https://tropi-pri.co.il/',
-            }],
-            creationDate: 'Created on: 2012',
-            content:
-                <>
-                    Designed and developed an online store for fruits trays company <br />
-                    The site includes a wide product catalog, content management, and online payment methods.
-                    This site was built with an independent system that able the customers to purchase the goods within the site.
-                </>
         },{
             image: orental,
             projectName: 'Electricity company site',

@@ -53,6 +53,7 @@
 
 .arrow-down{
     font-size:60px;
+    cursor: pointer;
 }
 .element-hidden {
     opacity: 0;
