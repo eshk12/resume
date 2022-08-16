@@ -16,6 +16,7 @@ import orBayaar from '../assets/images/orBayaar.png';
 import ametzDog from '../assets/images/ametzDog.png';
 import bouncePage from '../assets/images/bouncePage.png';
 import orental from '../assets/images/orental.png';
+import studentTracker from '../assets/images/studentTracker.png';
 
 
 const information = {
@@ -23,18 +24,13 @@ const information = {
     fullName: 'Itzik Barabie',
     role: 'software developer',
     currentRole: 'Backend Developer in Amdocs',
-    aboutMe: <>What is Lorem Ipsum?
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-        Ipsum
+    aboutMe:
+    <>
+        I am a passionate Full stack developer, Experienced with building desktop, Web and mobile application from scratch.
         <br/><br/>
-        has been the industry's standard dummy text ever since the 1500s, when an unknown
-        printer took a galley of type and scrambled it to make a type specimen book. <br/>
-        It has survived not only five centuries, but also the leap into electronic
-        typesetting,
-        remaining essentially unchanged. <br/><br/>It was popularised in the 1960s with the
-        release of
-        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</>,
+        I have experience working with Java, JS, Spring boot, React, React-Redux, Node.js and more. <br/>
+        You can see some of my work and contribution at <a href="https://github.com/eshk12/" rel="noopener noreferrer" target="_blank">GitHub</a>.
+    </>,
     profilePic: "https://media-exp1.licdn.com/dms/image/C4E03AQFYyF4MRWiGHw/profile-displayphoto-shrink_800_800/0/1619434456421?e=1664409600&v=beta&t=b2ANMUynOBdvaXecUzpZuR3hGjBzuUxB4yvqcE0Yjs0",
     skills:
         [
@@ -50,14 +46,14 @@ const information = {
                 title: 'Backend',
                 bgColor: 'bg-green',
                 textColor: 'text-green',
-                content: <>Java<br/>Node.js<br/>PHP<br/></>
+                content: <>Java - Spring boot<br/>Node.js<br/>PHP<br/></>
             },
             {
                 icon: <GrMysql/>,
                 title: 'Database',
                 bgColor: 'bg-blue',
                 textColor: 'text-blue',
-                content: <>Mysql, Oracle SQL<br/>MongoDB<br/> via Hibernate, Mongoose.</>
+                content: <>Mysql, Oracle SQL<br/>MongoDB<br/>Hibernate, Mongoose.</>
             },
             {
                 icon: <GiDesk/>,
@@ -124,6 +120,33 @@ const information = {
 
     carouselItemsContent: [
         {
+            image: studentTracker,
+            projectName: 'StudentTracker - An smarter way to keep your student close.',
+            builtWith: ['Java', 'Spring Boot', 'Hibernate', 'HTML', 'CSS', 'Bootstrap','React.js', 'Redux', 'mySQL'],
+            links: [{
+                linkName: 'GitHub - Backend',
+                url: 'https://github.com/eshk12/Student_Tracker_RestAPI',
+            },{
+                linkName: 'GitHub - Frontend',
+                url: 'https://github.com/eshk12/Student_Tracker_FrontEnd',
+            },{
+                linkName: 'Visit the site',
+                url: 'https://studenttracker.co.il/',
+                accessDetails: "itshakbar@gmail.com : 12345678"
+            }],
+            creationDate: 'Created on: 2021',
+            content:
+                <>
+                    StudentTracker was developed as part of my final degree project.<br />
+                    StudentTracker can handle multiple institutes with user permission system, That knows to limit access to users according to there domain.
+                    <ul>
+                        <li>Admin User - Have access to all institutes and departments in the system.</li>
+                        <li>Admin Institute User - Have access only to it's own departments.</li>
+                        <li>Admin Department User - Have access only to the department it associate with.</li>
+                    </ul>
+                </>
+        },
+        {
             image: bouncePage,
             projectName: 'Yad2 Automatic bouncer with GUI',
             builtWith: ['Java', 'Swing', 'Json'],
@@ -134,19 +157,20 @@ const information = {
             creationDate: 'Created on: 2022',
             content:
                 <>
-                    This project was built because I wanted to advertised something on the website Yad2, So I have found my self entering every 4 hours to bounce my ads to get them to the latest feeds.<br />
-                    So this application know to perform login to Yad2 website and populate the active ads and perform bounce every 4 hours.
+                    In order to automatically promote Yad2 ads, I developed this bouncer which login to Yad2 servers every 4 hours and retrieves the credentials and active ads,<br />
+                    And then the tool automatically bounce each active ad.
                 </>
         },{
             image: ametzDog,
-            projectName: 'Ametz Kelev association',
+            projectName: '"Ametz Kelev" - Adopt-a-Dog Foundation',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4','mySQL'],
             links: [],
             creationDate: 'Created on: 2017',
             content:
                 <>
-                    This project was developed for free as contribution to the "Ametz Kelev" association.<br />
-                    I have design and developed this system to help city veterinarians and municipal corrals to advertise there kidnapped animals.<br />
+                    This project was developed as part of my volunteering for the "Ametz Kelev" foundation.<br />
+                    I have designed and developed a system which helps city veterinarians and municipal corrals to advertise
+                    animals for adoption.<br />
                 </>
         },{
             image: nadlanil,
@@ -159,12 +183,12 @@ const information = {
             creationDate: 'Created on: 2018',
             content:
                 <>
-                    Design and develop an full system which manage and advertise mediator assets<br />
-                    I have build an engine which know to populate the best results for the customer according to it's inputs.
+                    I have designed and developed a system which manages and advertises real estates agency assets<br />
+                    The system includes a site for the agency to manage their assets, and a site for their customers which allow them to filter and view the assets.
                 </>
         },{
             image: orBayaar,
-            projectName: 'Or Bayaar - Events complex in Yad Mordechai Forest',
+            projectName: 'Or Bayaar - Events complex - Yad Mordechai Forest',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4','mySQL'],
             links: [{
                 linkName: 'Visit the site',
@@ -177,11 +201,11 @@ const information = {
             creationDate: 'Created on: 2017',
             content:
                 <>
-                    Design and develop with customized CMS, which allow the user to handle minor changes in the website.
+                    This site was designed and developed with customized CMS, which allow the user to handle minor changes in the website.
                 </>
         },{
             image: painter,
-            projectName: 'Land page for professional painter in Ashkelon',
+            projectName: 'Land page for a professional painter',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 3'],
             links: [{
                 linkName: 'Visit the site',
@@ -190,12 +214,12 @@ const information = {
             creationDate: 'Created on: 2016',
             content:
                 <>
-                    Design and develop an landpage which demonstrate the painter abilities,<br />
-                    Along with this site I have main an "Adword" campaign for advertising.
+                    Designed and developed a landpage which persent the painter resume and portfolio.<br />
+                    The project included "Adword" campaign for advertising.
                 </>
         },{
             image: yhr,
-            projectName: 'Yeshivat Hochamat Rahamim',
+            projectName: 'Yeshiva Site',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 3', 'mySQL'],
             links: [{
                 linkName: 'Visit the site',
@@ -208,12 +232,12 @@ const information = {
             creationDate: 'Created on: 2016',
             content:
             <>
-                Design and develop an website which shows the Yeshiva daily activitys.<br />
-                This site was built with inner store, gallery, videos and Q/A from the Rabai.
+                Designed and developed an website which shows the Yeshiva daily activitys.<br />
+                The site includes content management, online store, gallery and videos.
             </>
         },{
             image: tropiPri,
-            projectName: 'Store for the company Tropi-pri',
+            projectName: 'Tropi-Pri Online Store',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'mySQL'],
             links: [{
                 linkName: 'Visit the site',
@@ -222,12 +246,13 @@ const information = {
             creationDate: 'Created on: 2012',
             content:
                 <>
-                    Design and develop an maintain an internet store that's hold many variation of fruits trays<br />
-                    This site was build with independent system that able the customers to purchase the good within the side.
+                    Designed and developed an online store for fruits trays company <br />
+                    The site includes a wide product catalogue, content management and online payment methods.
+                   ???? This site was build with independent system that able the customers to purchase the good within the site.
                 </>
         },{
             image: orental,
-            projectName: 'Oren-Tal Electricity work LTD.',
+            projectName: 'Electricity company site',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'mySQL'],
             links: [{
                 linkName: 'Visit the site',
@@ -236,8 +261,8 @@ const information = {
             creationDate: 'Created on: 2011',
             content:
                 <>
-                    Design and develop an maintain an website which act as portfolio for the customer<br />
-                    This site was build along with CMS which allow the user to handle minor changes in the website.
+                    Designed and developed a website which pesent the company portfolio<br />
+                    This site includes CMS which allows the user to handle minor changes in the website.
                 </>
         },
     ]

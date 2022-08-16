@@ -44,11 +44,10 @@ const App = () => {
                     <Row>
                         <Col sm={12}>
                             <div className="section-title">About me</div>
-                            <p>A small introduction about myself</p>
                         </Col>
                     </Row>
                     <Row>
-                        <Col xl={{span: 4, offset: 3}}>
+                        <Col xl={{span: 4, offset: 3}} className="mt-5">
                             <div className="section-text ps-4 pe-4">
                                 <div className="title">{information.fullName}</div>
                                 <div className="sub-title">{information.currentRole}</div>

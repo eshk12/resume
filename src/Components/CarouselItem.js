@@ -17,7 +17,7 @@ const CarouselItem = ({carouselItem}) => {
                 <p>{carouselItem.content}</p>
                 <div className="links">
                     {
-                        carouselItem.links.map((link, key) => <React.Fragment key={key}><Button className="me-1" ><a href={link.url} target="_blank" rel="noopener noreferrer">{link.linkName}</a></Button> {link.accessDetails && <span className="accessDetails">{link.accessDetails}</span>}</React.Fragment> )
+                        carouselItem.links.map((link, key) => <React.Fragment key={key}><Button className="me-1 mt-2 mt-md-0" ><a href={link.url} target="_blank" rel="noopener noreferrer">{link.linkName}</a></Button> {link.accessDetails && <span className="accessDetails">{link.accessDetails}</span>}</React.Fragment> )
                     }
                 </div>
             </div>
