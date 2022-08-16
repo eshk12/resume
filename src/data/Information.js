@@ -26,9 +26,9 @@ const information = {
     currentRole: 'Backend Developer in Amdocs',
     aboutMe:
     <>
-        I am a passionate Full stack developer, Experienced with building desktop, Web and mobile application from scratch.
+        I am a passionate Full stack developer, Experienced with building desktop, Web, and mobile applications from scratch.
         <br/><br/>
-        I have experience working with Java, JS, Spring boot, React, React-Redux, Node.js and more. <br/>
+        I have experience working with Java, JS, Spring boot, React, React-Redux, Node.js, and more. <br/>
         You can see some of my work and contribution at <a href="https://github.com/eshk12/" rel="noopener noreferrer" target="_blank">GitHub</a>.
     </>,
     profilePic: "https://media-exp1.licdn.com/dms/image/C4E03AQFYyF4MRWiGHw/profile-displayphoto-shrink_800_800/0/1619434456421?e=1664409600&v=beta&t=b2ANMUynOBdvaXecUzpZuR3hGjBzuUxB4yvqcE0Yjs0",
@@ -39,21 +39,21 @@ const information = {
                 title: 'Front end',
                 bgColor: 'bg-yellow',
                 textColor: 'text-yellow',
-                content: <>HTML, CSS, JS<br/>Ajax, JQuery, Bootstrap<br/>React.js, Swing<br/></>
+                content: <>HTML, CSS, JS<br/>Ajax, Bootstrap<br/>React.js, React-Redux<br />Swing<br/></>
             },
             {
                 icon: <SiSpring/>,
                 title: 'Backend',
                 bgColor: 'bg-green',
                 textColor: 'text-green',
-                content: <>Java - Spring boot<br/>Node.js<br/>PHP<br/></>
+                content: <>Java - Spring boot<br/>Node.js - Express<br/>PHP<br/></>
             },
             {
                 icon: <GrMysql/>,
                 title: 'Database',
                 bgColor: 'bg-blue',
                 textColor: 'text-blue',
-                content: <>Mysql, Oracle SQL<br/>MongoDB<br/>Hibernate, Mongoose.</>
+                content: <>Mysql, Oracle SQL<br/>MongoDB</>
             },
             {
                 icon: <GiDesk/>,
@@ -111,7 +111,7 @@ const information = {
                 title: 'Freelancer',
                 subTitle: '',
                 date: '2011 - 2013',
-                content: <p>Web development, Data security and business branding along with project management.</p>
+                content: <p>Web development, Data security, and business branding along with project management.</p>
             },
 
         ],
@@ -138,11 +138,11 @@ const information = {
             content:
                 <>
                     StudentTracker was developed as part of my final degree project.<br />
-                    StudentTracker can handle multiple institutes with user permission system, That knows to limit access to users according to there domain.
+                    StudentTracker can handle multiple institutes with a user permission system, That knows to limit access to users according to their domain.
                     <ul>
                         <li>Admin User - Have access to all institutes and departments in the system.</li>
-                        <li>Admin Institute User - Have access only to it's own departments.</li>
-                        <li>Admin Department User - Have access only to the department it associate with.</li>
+                        <li>Admin Institute User - Have access only to its departments.</li>
+                        <li>Admin Department User - Have access only to the department it associates with.</li>
                     </ul>
                 </>
         },
@@ -157,8 +157,8 @@ const information = {
             creationDate: 'Created on: 2022',
             content:
                 <>
-                    In order to automatically promote Yad2 ads, I developed this bouncer which login to Yad2 servers every 4 hours and retrieves the credentials and active ads,<br />
-                    And then the tool automatically bounce each active ad.
+                    In order to automatically promote Yad2 ads, I developed this bouncer that login to Yad2 servers every 4 hours and retrieves the credentials and active ads,<br />
+                    And then the tool automatically bounces each active ad.
                 </>
         },{
             image: ametzDog,
@@ -169,7 +169,7 @@ const information = {
             content:
                 <>
                     This project was developed as part of my volunteering for the "Ametz Kelev" foundation.<br />
-                    I have designed and developed a system which helps city veterinarians and municipal corrals to advertise
+                    I have designed and developed a system that helps city veterinarians and municipal corrals to advertise
                     animals for adoption.<br />
                 </>
         },{
@@ -183,8 +183,8 @@ const information = {
             creationDate: 'Created on: 2018',
             content:
                 <>
-                    I have designed and developed a system which manages and advertises real estates agency assets<br />
-                    The system includes a site for the agency to manage their assets, and a site for their customers which allow them to filter and view the assets.
+                    I have designed and developed a system that manages and advertises real estates agency assets<br />
+                    The system includes a site for the agency to manage their assets, and a website for their customers which allow them to filter and view the assets.
                 </>
         },{
             image: orBayaar,
@@ -201,7 +201,7 @@ const information = {
             creationDate: 'Created on: 2017',
             content:
                 <>
-                    This site was designed and developed with customized CMS, which allow the user to handle minor changes in the website.
+                    This site was designed and developed with customized CMS, which allows the user to handle minor changes in the website.
                 </>
         },{
             image: painter,
@@ -214,8 +214,8 @@ const information = {
             creationDate: 'Created on: 2016',
             content:
                 <>
-                    Designed and developed a landpage which persent the painter resume and portfolio.<br />
-                    The project included "Adword" campaign for advertising.
+                    Designed and developed a land page that presents the painter's resume and portfolio.<br />
+                    The project included an "Adword" campaign for advertising.
                 </>
         },{
             image: yhr,
@@ -232,8 +232,8 @@ const information = {
             creationDate: 'Created on: 2016',
             content:
             <>
-                Designed and developed an website which shows the Yeshiva daily activitys.<br />
-                The site includes content management, online store, gallery and videos.
+                Designed and developed a website that shows Yeshiva's daily activities.<br />
+                The site includes content management, An online store, A gallery, And videos.
             </>
         },{
             image: tropiPri,
@@ -247,8 +247,8 @@ const information = {
             content:
                 <>
                     Designed and developed an online store for fruits trays company <br />
-                    The site includes a wide product catalogue, content management and online payment methods.
-                   ???? This site was build with independent system that able the customers to purchase the good within the site.
+                    The site includes a wide product catalog, content management, and online payment methods.
+                    This site was built with an independent system that able the customers to purchase the goods within the site.
                 </>
         },{
             image: orental,
@@ -261,7 +261,7 @@ const information = {
             creationDate: 'Created on: 2011',
             content:
                 <>
-                    Designed and developed a website which pesent the company portfolio<br />
+                    Designed and developed a website which present the company portfolio<br />
                     This site includes CMS which allows the user to handle minor changes in the website.
                 </>
         },

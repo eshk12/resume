@@ -30,7 +30,38 @@
     font-size:40px;
     color:#000;
 }
+.navigation-bar{
+    position:fixed;
+    text-align: left;
+    z-index:999999;
+    background: rgba(255,255,255,0.8);
+    padding:2rem 5rem 0 0;
+    border-radius: 10px;
+}
+.navigation-bar ul{
+    list-style: none;
+}
+.navigation-bar ul li{
+    cursor: pointer;
+}
+.navigation-bar ul li:hover{
+    text-decoration: underline;
+}
+.navigation-bar ul li span{
+    font-size: 24px;
+}
 
+.arrow-down{
+    font-size:60px;
+}
+.element-hidden {
+    opacity: 0;
+    transition: all 500ms linear 0.1s;
+}
+.element-show {
+    opacity: 100;
+    transition: all 500ms linear 0.1s;
+}
 
 .col-3-customized {
     flex: 0 0 23%;
@@ -207,14 +238,12 @@
     display: flex;
     flex-direction: column;
     min-width: 0;
+    height: 100%;
     word-wrap: break-word;
     text-align: center;
-    padding: 5rem 0 6rem 0;
+    padding: 3rem 0 3rem 0;
 }
 
-.skills .skill .skill-container{
-
-}
 
 .skills .skill .icon {
     width: 120px;
@@ -296,6 +325,14 @@
 }
 .contact .reachOut{
     font-size:20px;
+}
+.contact a{
+    color: #000000;
+    text-decoration: none;
+}
+.contact a:hover, .contact a:active{
+    color: #000000;
+    text-decoration: underline;
 }
 .border1 {
     border: solid 4px black;
