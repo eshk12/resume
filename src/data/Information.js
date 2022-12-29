@@ -17,27 +17,40 @@ import ametzDog from '../assets/images/ametzDog.png';
 import bouncePage from '../assets/images/bouncePage.png';
 import orental from '../assets/images/orental.png';
 import studentTracker from '../assets/images/studentTracker.png';
-
+import profileImage from '../assets/images/profileImage.png';
 
 const information = {
     githubLink: 'https://github.com/eshk12',
     fullName: 'Itzik Barabie',
-    role: 'software developer',
+    role: 'Software Developer',
     currentRole: 'Backend Developer in Amdocs',
     aboutMe:
-    <>
-        I am an experienced Full stack developer, with a demonstrated history of working in the internet industry.<br />
-        Experienced with building desktop, Web, and mobile applications from scratch.
-        <br /><br />
-        Skilled in Java, JavaScript, Spring boot, React frameworks, Node.js, SQL, noSQL,  Linux System Administration, and Application Programming Interfaces.
-        <br />
-        Strong engineering knowledge with a love to develop full stack applications from scratch.
-        <br /><br />
-        B.Sc. degree in Computer Sciences graduate with professional experience.
-        <br /><br />
-        You can see some of my work and contribution on <a href="https://github.com/eshk12/" rel="noopener noreferrer" target="_blank">GitHub</a>.
-    </>,
-    profilePic: "https://media-exp1.licdn.com/dms/image/C4E03AQFYyF4MRWiGHw/profile-displayphoto-shrink_800_800/0/1619434456421?e=1664409600&v=beta&t=b2ANMUynOBdvaXecUzpZuR3hGjBzuUxB4yvqcE0Yjs0",
+        <>
+            I am a skilled Full Stack developer with a passion for building high-quality applications from the ground
+            up.
+            <br/><br/>
+            With a B.Sc. degree in Computer Sciences and professional experience in the internet industry, I have a
+            strong foundation in engineering principles and a track record of delivering successful projects.
+            <br/><br/>
+            In my work, I have utilized a variety of technologies, including Java, JavaScript, Spring boot, React,
+            Node.js, SQL, noSQL, Linux System Administration.
+            <br/><br/>
+            I am experienced in building desktop, web, and mobile applications and have a proven ability to learn and
+            adapt to new technologies as needed.
+            <br/><br/>
+            I am also skilled at quickly understanding the flow and structure of existing systems and able to integrate
+            new features and functionality seamlessly.<br/>
+            In addition to my technical skills, I am a team player with strong communication and problem-solving
+            abilities. I am proactive, detail-oriented, and always eager to take on new challenges.
+            <br/><br/>
+            I enjoy collaborating with others to find creative solutions to complex problems and am committed to
+            continuously learning and improving my skills.
+            <br/><br/>
+            You can see some of my work and contributions on my <a href="https://github.com/eshk12/"
+                                                                   rel="noopener noreferrer"
+                                                                   target="_blank">GitHub</a> profile.
+        </>,
+    profilePic: profileImage,
     skills:
         [
             {
@@ -45,7 +58,7 @@ const information = {
                 title: 'Front end',
                 bgColor: 'bg-yellow',
                 textColor: 'text-yellow',
-                content: <>HTML, CSS, JS<br/>Ajax, Bootstrap<br/>React.js, React-Redux<br />Swing<br/></>
+                content: <>HTML, CSS, JS<br/>Ajax, Bootstrap<br/>React.js, React-Redux<br/>Swing<br/></>
             },
             {
                 icon: <SiSpring/>,
@@ -77,7 +90,10 @@ const information = {
                 title: 'Software Developer',
                 subTitle: 'Amdocs, Shderot, IL',
                 date: '2021 - Present',
-                content: <p>Application Management, Development and maintain backend applications</p>
+                content: <p>
+                    As a Software Developer, I have been responsible for managing and developing backend applications.<br />
+                    I deliver high-quality solutions and ensure the reliability and efficiency of my clients' applications.
+                        </p>
             },
             {
                 color: 'rgb(233, 30, 99)',
@@ -93,7 +109,11 @@ const information = {
                 title: 'Freelancer',
                 subTitle: '',
                 date: '2016 - 2018',
-                content: <p>Building websites and interfaces according to the requests of the customers.</p>
+                content:
+                    <p>
+                        I have built custom websites and interfaces to meet the specific needs of my clients.<br />
+                        My expertise in user experience design ensures that the solutions I deliver are high-quality and user-friendly.
+                    </p>
             },
             {
                 color: 'rgb(54, 124, 247)',
@@ -121,21 +141,24 @@ const information = {
             },
 
         ],
-    carouselItems: carouselItemsContent => carouselItemsContent.map((carouselItem, key) =>  ({key: uuidv4(), content: <CarouselItem key={key} carouselItem = {carouselItem} />}) ),
+    carouselItems: carouselItemsContent => carouselItemsContent.map((carouselItem, key) => ({
+        key: uuidv4(),
+        content: <CarouselItem key={key} carouselItem={carouselItem}/>
+    })),
 
 
     carouselItemsContent: [
         {
             image: studentTracker,
             projectName: 'StudentTracker - An smarter way to keep your student close.',
-            builtWith: ['Java', 'Spring Boot', 'Hibernate', 'HTML', 'CSS', 'Bootstrap','React.js', 'Redux', 'mySQL'],
+            builtWith: ['Java', 'Spring Boot', 'Hibernate', 'HTML', 'CSS', 'Bootstrap', 'React.js', 'Redux', 'mySQL'],
             links: [{
                 linkName: 'GitHub - Backend',
                 url: 'https://github.com/eshk12/Student_Tracker_RestAPI',
-            },{
+            }, {
                 linkName: 'GitHub - Frontend',
                 url: 'https://github.com/eshk12/Student_Tracker_FrontEnd',
-            },{
+            }, {
                 linkName: 'Visit the site',
                 url: 'https://studenttracker.co.il/',
                 accessDetails: "itshakbar@gmail.com : 12345678"
@@ -143,13 +166,21 @@ const information = {
             creationDate: 'Created on: 2021',
             content:
                 <>
-                    StudentTracker was developed as part of my final degree project.<br />
-                    StudentTracker can handle multiple institutes with a user permission system, That knows to limit access to users according to their domain.
+                    StudentTracker is a comprehensive student management system that was developed as part of my final
+                    degree project. It is designed to handle multiple institutes and features a user permission system
+                    that allows for granular control over access to information.
+
+                    With StudentTracker, there are three levels of admin users:
                     <ul>
-                        <li>Admin User - Have access to all institutes and departments in the system.</li>
-                        <li>Admin Institute User - Have access only to its departments.</li>
-                        <li>Admin Department User - Have access only to the department it associates with.</li>
+                        <li>Admin User: This user has access to all institutes and departments within the system.</li>
+                        <li>Admin Institute User: This user has access only to the departments within their institute.
+                        </li>
+                        <li>Admin Department User: This user has access only to the department with which they are
+                            associated.
+                        </li>
                     </ul>
+                    StudentTracker is a powerful tool that enables administrators to easily manage and track student
+                    data, streamline communication, and improve overall efficiency within their institute.
                 </>
         },
         {
@@ -163,22 +194,24 @@ const information = {
             creationDate: 'Created on: 2022',
             content:
                 <>
-                    In order to automatically promote Yad2 ads, I developed this bouncer that login to Yad2 servers every 4 hours and retrieves the credentials and active ads,<br />
-                    And then the tool automatically bounces each active ad.
+                    I developed a tool called the "bouncer" to automate the promotion of Yad2 ads.<br />
+                    The bouncer logs in to the Yad2 servers every 4 hours to retrieve the credentials and active ads.<br />
+                    It then automatically bounces each active ad to ensure maximum visibility and engagement.<br />
+                    The bouncer streamlines the ad promotion process and helps to maximize the effectiveness of marketing efforts.
                 </>
-        },{
+        }, {
             image: ametzDog,
             projectName: '"Ametz Kelev" - Adopt-a-Dog Foundation',
-            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4','mySQL'],
+            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4', 'mySQL'],
             links: [],
             creationDate: 'Created on: 2017',
             content:
                 <>
-                    This project was developed as part of my volunteering for the "Ametz Kelev" foundation.<br />
-                    I have designed and developed a system that helps city veterinarians and municipal corrals to advertise
-                    animals for adoption.<br />
+                    I am proud to have had the opportunity to volunteer with the "Ametz Kelev" foundation and contribute to a project that helps city veterinarians and municipal corrals advertise animals for adoption.<br />
+                    I designed and developed a system specifically for this purpose, which aims to make the process of finding forever homes for these animals more efficient and effective.<br />
+                    I believe that this system will be a valuable resource for both veterinarians and potential adopters, and I am confident that it will make a positive impact on the well-being of animals in need.
                 </>
-        },{
+        }, {
             image: tropiPri,
             projectName: 'Tropi-Pri Online Store',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'mySQL'],
@@ -189,14 +222,14 @@ const information = {
             creationDate: 'Created on: 2012',
             content:
                 <>
-                    Designed and developed an online store for fruits trays company <br />
-                    The site includes a wide product catalog, content management, and online payment methods.
-                    This site was built with an independent system that able the customers to purchase the goods within the site.
+                    I designed and developed an online store for a fruits tray company that features a comprehensive product catalog, content management capabilities, and multiple online payment options.<br />
+                    Customers are able to purchase goods directly through the site using the intuitive and user-friendly system that I developed.<br />
+                    This project was a successful and fulfilling endeavor that has allowed the company to expand their reach and improve their e-commerce capabilities.
                 </>
-        },{
+        }, {
             image: nadlanil,
             projectName: 'Real Estate site',
-            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4','mySQL'],
+            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4', 'mySQL'],
             links: [{
                 linkName: 'Mock up',
                 url: 'https://itzikb.co.il/nadlanil/',
@@ -204,17 +237,19 @@ const information = {
             creationDate: 'Created on: 2018',
             content:
                 <>
-                    I have designed and developed a system that manages and advertises real estates agency assets<br />
-                    The system includes a site for the agency to manage their assets, and a website for their customers which allow them to filter and view the assets.
+                    I have designed and developed a comprehensive system for managing and advertising real estate agency assets.<br />
+                    The system includes a platform for the agency to manage their properties and a website for customers to browse and filter available assets.<br />
+                    This system has been a valuable tool for the agency, providing them with an efficient way to manage and showcase their portfolio.<br />
+                    It has also been a convenient resource for customers, allowing them to easily search and find properties that meet their needs and preferences.
                 </>
-        },{
+        }, {
             image: orBayaar,
             projectName: 'Or Bayaar - Events complex - Yad Mordechai Forest',
-            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4','mySQL'],
+            builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 4', 'mySQL'],
             links: [{
                 linkName: 'Visit the site',
                 url: 'https://itzikb.co.il/orbayaar/',
-            },{
+            }, {
                 linkName: 'Dashboard',
                 url: 'https://itzikb.co.il/orbayaar/ui',
                 accessDetails: "email : password"
@@ -222,9 +257,11 @@ const information = {
             creationDate: 'Created on: 2017',
             content:
                 <>
-                    This site was designed and developed with customized CMS, which allows the user to handle minor changes in the website.
+                    I designed and developed this site with a custom CMS that enables the user to easily make minor updates and changes to the website.<br />
+                    This feature allows for greater flexibility and control over the website's content and design, ensuring that it accurately reflects the needs and goals of the user.<br />
+                    The custom CMS is user-friendly and intuitive, making it easy for users to maintain and update the site as needed.
                 </>
-        },{
+        }, {
             image: painter,
             projectName: 'Land page for a professional painter',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 3'],
@@ -235,28 +272,33 @@ const information = {
             creationDate: 'Created on: 2016',
             content:
                 <>
-                    Designed and developed a land page that presents the painter's resume and portfolio.<br />
-                    The project included an "Adword" campaign for advertising.
+                    I designed and developed a landing page for a painter that showcases their resume and portfolio.<br />
+                    The project also included an Adwords campaign to increase visibility and reach.<br />
+                    The landing page is visually appealing and easy to navigate, allowing potential clients to easily view the painter's work and learn more about their background and experience.<br />
+                    The Adwords campaign was an effective way to reach a wider audience and generate interest in the painter's services.<br />
+                    Overall, this project was a success and has helped to promote the painter's business and reach new clients.
                 </>
-        },{
+        }, {
             image: yhr,
             projectName: 'Yeshiva Site',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'Bootstrap 3', 'mySQL'],
             links: [{
                 linkName: 'Visit the site',
                 url: 'https://itzikb.co.il/yhr/',
-            },{
+            }, {
                 linkName: 'Dashboard',
                 url: 'https://itzikb.co.il/yhr/ui',
                 accessDetails: "email : password"
             }],
             creationDate: 'Created on: 2016',
             content:
-            <>
-                Designed and developed a website that shows Yeshiva's daily activities.<br />
-                The site includes content management, An online store, A gallery, And videos.
-            </>
-        },{
+                <>
+                    I designed and developed a website for a Yeshiva that showcases the daily activities of the institution.<br />
+                    The website includes content management capabilities, an online store, a gallery, and videos.<br />
+                    These features provide a comprehensive overview of the Yeshiva's offerings and create an engaging and interactive experience for visitors.<br />
+                    The website serves as an important resource for those interested in learning more about the Yeshiva and its programs.
+                </>
+        }, {
             image: orental,
             projectName: 'Electricity company site',
             builtWith: ['HTML', 'CSS', 'Java Script', 'Php', 'Ajax', 'mySQL'],
@@ -267,8 +309,11 @@ const information = {
             creationDate: 'Created on: 2011',
             content:
                 <>
-                    Designed and developed a website which present the company portfolio<br />
-                    This site includes CMS which allows the user to handle minor changes in the website.
+                    I designed and developed a website that showcases the company's portfolio.<br />
+                    The website features a custom CMS that allows the user to easily make minor updates and changes to the site.<br />
+                    This enables the company to maintain a current and accurate representation of their work and services.<br />
+                    The website is visually appealing and easy to navigate, providing an enjoyable and informative experience for visitors.<br />
+                    It serves as a valuable resource for those interested in learning more about the company and its offerings.
                 </>
         },
     ]
